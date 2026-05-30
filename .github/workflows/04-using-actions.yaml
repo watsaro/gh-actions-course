@@ -8,8 +8,9 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-      - name: Printing Foulders
+      - name: Printing Folders
         run: ls
+
     # 0. Checkout the code from the repostory
 
     # 1 install deps of our react application
