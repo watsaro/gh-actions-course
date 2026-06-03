@@ -12,7 +12,7 @@ on:
 jobs:
   echo:
     runs-on: ubuntu-latest
-    step:
+    steps:
       - name: '[debug] Print Start-up data'
         if: ${{ inputs.debug }}
         run: |
@@ -21,7 +21,7 @@ jobs:
           echo "Commit SHA ${{ github.sha }}"
           echo "Runner OS: ${{ runner.os }}"
       - name: '[DEBUG] Print when triggerd from main'
-        if: ${{ inputs.debug && github.ref == 'ref/heads/main'}}
+        if: ${{ inputs.debug && github.ref == 'refs/heads/main'}}
         run: echo "I was triggerd from main"
       - name: Greeting
         run: echo "Hello , world"
