@@ -11,10 +11,10 @@ on:
         description: Node version
         type: choice
         options:
-          - 18.x
-          - 20.x
-          - 21.x
-        default: 20.x
+          - 10.x
+          - 24.x
+          - 25.x
+        default: 25.x
 
 jobs:
   install-deps:
